@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'PlayFairDisplay';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     margin: 0;
@@ -73,7 +79,7 @@ background: inherit;
     margin: 0;
     font-size: 5vw;
     font-weight: 100;
-    font-family: century;
+    font-family: PlayFairDisplay;
     
 }
 
@@ -190,7 +196,7 @@ flex-direction: column;
     padding: 50px 50px 150px 50px;
 }
 #theme-nu-II h2{
-font-family: century;
+font-family: PlayFairDisplay;
     font-weight: 100;
     font-size: 46px;
     min-width: 402px;
@@ -223,7 +229,7 @@ font-family: century;
 
 
 #III-cards h3{
-font-family: century;
+font-family: PlayFairDisplay;
     font-size: 20px;
     font-weight: 100;
     margin: 6px 0;
@@ -335,7 +341,7 @@ font-family: sans-serif;
 #middle-content h3 {
     display: inline-block;
     font-size: 3.8vw;
-    font-family: century;
+    font-family: PlayFairDisplay;
     margin: 14px 0px 1px;
 }
 
@@ -353,14 +359,14 @@ font-family: sans-serif;
 #middle-content h4{
     font-size: 1.7vw;
     margin: 0;
-    font-family: century;
+    font-family: PlayFairDisplay;
     font-weight: 100;
 }
 
 #middle-content h4+h4{
     margin: 0;
     color:gray;
-    font-family: century;
+    font-family: PlayFairDisplay;
     font-weight: 100;
     margin-bottom: 2vw;
 }
@@ -380,7 +386,7 @@ font-family: sans-serif;
 }
 #business-title-flex h2{
     width: 43%;
-    font-family: century;
+    font-family: PlayFairDisplay;
     font-size: 46px;
     font-weight: 100;
 }
@@ -420,7 +426,7 @@ width: 35px;
 }
 
 #business-link h3{
-    font-family: century;
+    font-family: PlayFairDisplay;
     font-weight: 100;
 }
 
@@ -478,7 +484,7 @@ footer{
 footer h2{
     background: black;
     color: white;
-    font-family: century;
+    font-family: PlayFairDisplay;
     font-weight: 100;
     margin: 0;
 }
@@ -601,7 +607,7 @@ margin: 0px 14px;
 
 
 #theme-nu-II h2 {
-    font-family: century;
+    font-family: PlayFairDisplay;
     font-weight: 100;
     font-size: 46px;
     min-width: 100%;

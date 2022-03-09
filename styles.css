@@ -18,9 +18,8 @@
 }
 body {
   margin: 0;
-  color: #1F212B;
+  color: #1f212b;
 }
-
 
 header #header-img-holder img {
   top: 0;
@@ -32,6 +31,61 @@ header #header-img-holder img {
 header #header-img-holder img + img {
   display: none;
 }
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0b;
+  z-index: 200;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.splashMyClass {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0b;
+  z-index: -10;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: all 0.5s;
+}
+
+.title-holder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30vh;
+}
+
+.bottom-segment {
+  font-family: HalveticaNowDisplay;
+  text-transform: capitalize;
+  letter-spacing: 0.08em;
+  display: flex;
+  justify-content: space-between;
+  margin: 4vh;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
 
 #absolute-header {
   position: absolute;
@@ -40,8 +94,8 @@ header #header-img-holder img + img {
   padding: 20px 60px 0;
 }
 
-#logo img{
-    position: static;
+#logo img {
+  position: static;
   width: 87px;
   height: 16px;
   margin-right: 13px;
@@ -67,7 +121,6 @@ header #header-img-holder img + img {
   min-width: 114px;
 }
 
-
 #header-right-side #ZP {
   border-radius: 7px;
   padding: 12px 14px;
@@ -79,79 +132,75 @@ header #header-img-holder img + img {
 }
 
 #header-right-side #mybar {
-    float: right;
-    display: none;
-    margin: 1px 0 0 0;
+  float: right;
+  display: none;
+  margin: 1px 0 0 0;
 }
 
 /*                    BAR                      */
 .bar-holder {
-    cursor: pointer;
-    width: 26px;
-    height: 17px;
-    background: inherit;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* transition:all .5s ease-in-out; */
+  cursor: pointer;
+  width: 26px;
+  height: 17px;
+  background: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* transition:all .5s ease-in-out; */
 }
 
 .bars {
-    width: 18px;
-    height: 2px;
-    background: black;
-    position: absolute;
-    transition: all .5s ease-in-out;
+  width: 18px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
 }
 
-
-.bar1{
-    transform: translateY(-3px);
-}
-    
-.bar2{
-    transform: translateY(3px);
+.bar1 {
+  transform: translateY(-3px);
 }
 
-
-.bar-holder.open .bar1{
-    transform: rotate(135deg) translate(0px,0px);  /*ako oce 45 */
+.bar2 {
+  transform: translateY(3px);
 }
 
-.bar-holder.open .bar2{
-    transform: rotate(45deg) translate(0px,0px);   /*-45 */
+.bar-holder.open .bar1 {
+  transform: rotate(135deg) translate(0px, 0px); /*ako oce 45 */
 }
 
-
-
-
+.bar-holder.open .bar2 {
+  transform: rotate(45deg) translate(0px, 0px); /*-45 */
+}
 
 /*                    BAREND                  */
 #header-left-side {
   display: grid;
   grid-template-columns: auto auto auto;
-   width: 200px;/* 260 */
+  width: 200px; /* 260 */
   margin-right: auto;
   justify-items: end;
 }
 
 #header-left-side button {
-    font-family: HalveticaNowDisplay;
+  font-family: HalveticaNowDisplay;
   background: inherit;
   border: none;
   color: white;
-  font-size:11.5px;
+  font-size: 11.5px;
   min-width: 67px;
   padding: 0;
 }
 
-#header-left-side .nav-links:nth-child(1),#header-left-side .nav-links:nth-child(2){
-  display: none;/*headerleftside width vratiti s ovim */
+#header-left-side .nav-links:nth-child(1),
+#header-left-side .nav-links:nth-child(2) {
+  display: none; /*headerleftside width vratiti s ovim */
 }
-#header-right-side .nav-links:nth-child(2),#header-right-side .nav-links:nth-child(3){
-   display: none;/*headerrightside width vratiti s ovim */
+#header-right-side .nav-links:nth-child(2),
+#header-right-side .nav-links:nth-child(3) {
+  display: none; /*headerrightside width vratiti s ovim */
 }
 
 .nav-links {
@@ -163,16 +212,13 @@ header #header-img-holder img + img {
   width: max-content;
 }
 
-
-
-#header-left-side .dropbtn{
-    cursor: pointer;
+#header-left-side .dropbtn {
+  cursor: pointer;
 }
 
-#header-left-side .dropbtn i{
-    margin: 0 4px;
+#header-left-side .dropbtn i {
+  margin: 0 4px;
 }
-
 
 #header-right-side button {
   background: none;
@@ -185,7 +231,7 @@ header #header-img-holder img + img {
 }
 
 #header-title {
-  position:relative ;
+  position: relative;
   max-width: 345px;
   color: white;
   margin-top: 40px;
@@ -230,8 +276,8 @@ header #header-img-holder img + img {
   letter-spacing: 1.3px;
 }
 
-#header-title a + a{
-display: none;
+#header-title a + a {
+  display: none;
 }
 
 /*       /////////////bookkeeping-services II/////////////           */
@@ -368,8 +414,8 @@ display: none;
   letter-spacing: 1px;
 }
 
-#PDV button +button {
-display: none;
+#PDV button + button {
+  display: none;
 }
 
 /*      /////////////////////////   II     //////////////////////        */
@@ -613,8 +659,8 @@ footer nav a {
   flex-wrap: wrap;
 }
 
-#bottom-of-footer div img{
-margin-right: 10px;
+#bottom-of-footer div img {
+  margin-right: 10px;
 }
 
 #bottom-of-footer #right-corner a {
@@ -634,7 +680,6 @@ margin-right: 10px;
   font-size: 14px;
   margin-right: 20px;
   letter-spacing: 0.5px;
-
 }
 
 #bottom-of-footer #right-corner a {
@@ -696,7 +741,7 @@ margin-right: 10px;
     margin: 0px 690px 0 auto;
   }
 
-  #PDVgrid div:nth-child(3){
+  #PDVgrid div:nth-child(3) {
     margin: 0px 790px 0 auto;
   }
 
@@ -704,11 +749,11 @@ margin-right: 10px;
     margin: 0px 730px 0 auto;
   }
 
-  #PDVgrid div:nth-child(5){
+  #PDVgrid div:nth-child(5) {
     margin: 0px 650px 0 auto;
   }
 
-  #PDVgrid div:nth-child(6){
+  #PDVgrid div:nth-child(6) {
     margin: 0px 580px 0 auto;
   }
 
@@ -752,7 +797,6 @@ margin-right: 10px;
   }
 }
 
-
 @media only screen and (min-width: 1440px) {
   #PDV #img1000 {
     position: absolute;
@@ -790,18 +834,17 @@ margin-right: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-
-    header #logo img{
-     filter: invert();   
-     margin-right: 18px;
-    }
+  header #logo img {
+    filter: invert();
+    margin-right: 18px;
+  }
 
   .section-box {
     padding: 120px 60px 120px; /* 7.8vw=60px*/
   }
 
   #absolute-header {
-    padding: 18px 60px 20px;  /* 7.8vw=60px*/
+    padding: 18px 60px 20px; /* 7.8vw=60px*/
   }
 
   #absolute-header {
@@ -849,14 +892,14 @@ margin-right: 10px;
     display: none;
   }
   #header-right-side a:first-child {
-    color: #1F212B;
+    color: #1f212b;
   }
 
   #header-right-side #ZP {
     display: none;
   }
 
-  #header-right-side #mybar{
+  #header-right-side #mybar {
     display: inline-block;
   }
 
@@ -865,7 +908,7 @@ margin-right: 10px;
   }
 
   #header-title h3 {
-    color: #1F212B;
+    color: #1f212b;
     display: block;
     font-family: "PlayFairDisplay";
     font-size: 34px;
@@ -877,19 +920,16 @@ margin-right: 10px;
     color: #605c5c;
   }
 
-
-  #header-title a  {
+  #header-title a {
     display: none;
   }
 
   #header-title a + a {
     display: block;
-    margin-top: 22px;  
+    margin-top: 22px;
     background: #f47758;
     color: white;
   }
-
-  
 
   #III-cards {
     width: 297px;
@@ -922,15 +962,12 @@ margin-right: 10px;
     justify-content: center;
   }
 
-
-
-
   #PDV button {
-   display: none;
+    display: none;
   }
-  
-  #PDV button +button {
-  display: block;
+
+  #PDV button + button {
+    display: block;
   }
 
   #PDV #img1000 {
@@ -942,7 +979,6 @@ margin-right: 10px;
     column-gap: 54px;
   }
 }
-
 
 @media only screen and (max-width: 380px) {
   header #header-img-holder img {
@@ -974,7 +1010,7 @@ margin-right: 10px;
     display: none;
   }
 
-  #header-title a+a {
+  #header-title a + a {
     z-index: 1;
     position: absolute;
     bottom: -538px;
@@ -982,12 +1018,11 @@ margin-right: 10px;
     padding: 16px;
     width: 100%;
     text-align: center;
-}
-
-  #header-title a{
-      display: none;
   }
 
+  #header-title a {
+    display: none;
+  }
 
   #PDV h1 {
     font-size: 37px;

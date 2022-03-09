@@ -1,4 +1,21 @@
 
+
+const menubtn=document.querySelector(".bar-holder");
+let menuOpen=false;
+
+menubtn.addEventListener("click", ()=>{
+if(!menuOpen){
+    menubtn.classList.add("open");
+    menuOpen=true;
+}
+else{
+    menubtn.classList.remove("open");
+    menuOpen=false;
+}
+});
+
+
+
 const colors=document.querySelectorAll("#business-link");
 const colorsaray=["#ffdeff", "#f7594e","#edd5ed", "#d8e2e7","#e6eeef"]
 
@@ -49,6 +66,8 @@ for (var i=0; i<mqls.length; i++){ // loop through queries
     mediaqueryresponse(mqls[i]) // call handler function explicitly at run time
     mqls[i].addListener(mediaqueryresponse) // call handler function whenever the media query is triggered
 }
+
+
 
 
 

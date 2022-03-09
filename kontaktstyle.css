@@ -1,0 +1,121 @@
+
+body{
+    background: #f4f4f4;
+}
+
+#logo img {
+    filter: invert();
+}
+
+
+.nav-links  {
+    color: black !important;
+}
+
+#header-right-side .nav-links button{
+    color: black !important;
+}
+
+#header-right-side #ZP{
+    color: white !important;
+}
+
+#stmap img {
+    top: 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#contact-content{
+    display: block;
+    position: relative;
+    margin-top: 120px;
+}
+
+
+
+#contact-content h1 {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: PlayFairDisplay;
+    margin: 0;
+}
+
+#contact-content h1 +h1{
+    margin-top: -10px;
+}
+
+#contact-content h1:nth-child(2){
+    color: #f47758;
+}
+
+
+#contact-content small {
+    margin-top: 20px;
+    max-width: 260px;
+    display: block;
+    font-family: HalveticaNowDisplay;
+    font-size: 18px;
+    color: gray;
+}
+
+#contact-content a {
+    display: block;
+    margin-top: 8px;
+    color: gray;
+    font-family: HalveticaNowDisplay;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#contactimgbottom{
+    display: block;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 1001px) {
+
+
+#contact-content h1 {
+    font-size: 50px;
+}
+
+
+
+#contact-content small {
+    max-width: 426px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
+#contact-content {
+    width: 460px;
+}
+
+#contact-content h1 {
+    font-size: 53px;
+}
+
+}
+
+@media only screen and (max-width: 380px) {
+
+#contact-content h1 {
+    font-size: 37px;
+}
+#contact-content h1:nth-child(2) {
+color: #ff7121;
+}
+
+#contact-content small {
+    font-size: 16px;
+}
+#contact-content a {
+    font-size: 14px;
+}
+}

@@ -11,12 +11,12 @@ menubtn.addEventListener("click", () => {
   }
 });
 
-const colors = document.querySelectorAll("#business-link");
-const colorsaray = ["#ffdeff", "#f7594e", "#edd5ed", "#d8e2e7", "#e6eeef"];
+// const colors = document.querySelectorAll("#business-link");
+// const colorsaray = ["#ffdeff", "#f7594e", "#edd5ed", "#d8e2e7", "#e6eeef"];
 
-for (i = 0; i < colors.length; i++) {
-  colors[i].style.background = colorsaray[i];
-}
+// for (i = 0; i < colors.length; i++) {
+//   colors[i].style.background = colorsaray[i];
+// }
 
 var mqls = [
   // list of window.matchMedia() queries

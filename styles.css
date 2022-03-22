@@ -467,105 +467,133 @@ header #header-img-holder img + img {
 }
 
 /*                    business         theme V              */
-
-#business {
-  overflow-x: hidden;
+#business{
+  height: 700px;
 }
 
-#business-title-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#business-title-flex h2 {
-  width: 280px;
-  font-family: PlayFairDisplay;
-  font-size: 39px;
-  font-weight: 100;
-}
-
-#business-title-flex h2 + div {
+::-webkit-scrollbar {
   display: none;
-  margin-right: 3vw;
-}
-
-#drag {
-  display: inline-block;
-  border: solid 1px #bdbcbc;
-  border-radius: 46px;
-  height: 70px;
-  width: 70px;
-  text-align: center;
-  padding: 28.5px 0px;
-}
-
-#drag div {
-  font-family: HalveticaNowDisplay;
-  font-size: 11px;
-  color: #a9a9ac;
-}
-
-#arrow {
-  display: inline-block;
-  margin: 0px 1.7vw;
-  color: #a9a9ac;
-}
-
-#business-links-holder {
-  display: flex;
-}
-
-#business-link {
-  background: #f47758;
-  width: 280px;
-  min-width: 280px;
-  padding: 30px;
-  margin: 14px 17px;
-}
-
-#business-link img {
-  width: 35px;
-}
-
-#business-link h3 {
-  font-family: PlayFairDisplay;
-  font-size: 21px;
-  font-weight: 100;
-  margin-bottom: 10px;
-}
-
-#business-link p {
-  font-family: HalveticaNowDisplay;
-  color: #bba2a2;
-  margin-top: 10px;
-}
-
-#business-link h6 {
-  font-family: HalveticaNowDisplay;
-  margin-bottom: 2px;
-  font-size: 12px;
-  width: max-content;
-  font-weight: 100;
-}
-
-#business-link:hover h6 {
-  color: white;
-  text-decoration: underline;
-  cursor: pointer;
-}
-#business-link:hover h3 {
-  color: white;
-}
-#business-link:hover img {
-  mix-blend-mode: color-dodge;
-}
-
-#business-link img {
-  margin-top: 55px;
-}
-
+  width: 0;
+    }
+  
+  
+  
+  .relativeholder {
+    position: absolute;
+    height: 336px;
+    width: 100%;
+    left: 0;
+  }
+  
+    
+    #business-title-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+  
+    #business-title-flex h2 {
+      width: 280px;
+      font-family: PlayFairDisplay;
+      font-size: 39px;
+      font-weight: 100;
+    }
+    
+    #business-title-flex h2 + div {
+      display: none;
+      margin-right: 3vw;
+    }
+    
+    #drag {
+      display: inline-block;
+      border: solid 1px #bdbcbc;
+      border-radius: 46px;
+      height: 70px;
+      width: 70px;
+      text-align: center;
+      padding: 28.5px 0px;
+    }
+    
+    #drag div {
+      font-family: HalveticaNowDisplay;
+      font-size: 11px;
+      color: #a9a9ac;
+    }
+    
+    #arrow {
+      display: inline-block;
+      margin: 0px 1.7vw;
+      color: #a9a9ac;
+    }
+    
+    #business-links-holder {
+      display: flex;
+      overflow-x: auto;
+      counter-reset: my-sec-counter;
+  }
+  
+  
+    
+    #business-link {
+      display: block;
+      position: relative;
+      background: blueviolet;
+      width: 280px;
+      min-width: 280px;
+      padding: 30px;
+      margin: 14px 17px;
+    }
+    
+  
+    #business-link img {
+      width: 35px;
+    }
+    
+    #business-link h3::before {
+      display: none;
+      counter-increment: my-sec-counter;
+      content:counter(my-sec-counter);
+    }
+    #business-link h3 { 
+      font-family: PlayFairDisplay;
+      font-size: 21px;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+    
+    #business-link p {
+      font-family: HalveticaNowDisplay;
+      color: #bba2a2;
+      margin-top: 10px;
+    }
+    
+    #business-link h6 {
+      font-family: HalveticaNowDisplay;
+      margin-bottom: 2px;
+      font-size: 12px;
+      width: max-content;
+      font-weight: 100;
+    }
+    
+    #business-link:hover h6 {
+      color: white;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    #business-link:hover h3 {
+      color: white;
+    }
+    #business-link:hover img {
+      mix-blend-mode: color-dodge;
+    }
+    
+    #business-link img {
+      margin-top: 55px;
+      margin-top: 55px;
+      -webkit-user-drag: none;
+    }
 /*                    footer                           */
 
 #footers-title {
@@ -792,6 +820,10 @@ footer nav a {
     font-size: 61px;
   }
 
+  #business{
+    height: 850px;
+  }
+  
   #footer-nav-holder {
     max-width: 1001px;
   }
@@ -813,6 +845,8 @@ footer nav a {
   #III-cards {
     padding: 38px;
   }
+
+  
 
   #footers-title {
     float: left;

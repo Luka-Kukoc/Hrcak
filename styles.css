@@ -156,7 +156,7 @@ header #header-img-holder img + img {
   height: 2px;
   background: black;
   position: absolute;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .bar1 {
@@ -224,7 +224,7 @@ header #header-img-holder img + img {
   background: none;
   color: white;
   border: none;
-  font-family: Helvetica;
+  font-family: HalveticaNowDisplay;
   font-size: 12px;
   cursor: pointer;
   padding: 0 2px;
@@ -687,6 +687,252 @@ footer nav a {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 380px) {
+  header #header-img-holder img {
+    display: none;
+  }
+
+  #header-img-holder {
+    height: 530px;
+    display: block;
+    position: relative;
+  }
+
+  header #header-img-holder img + img {
+    position: absolute;
+    top: 0;
+    width: 380px;
+    display: block;
+  }
+
+  .section-box {
+    padding: 80px 28px 80px;
+  }
+
+  #absolute-header {
+    padding: 18px 28px 0px;
+  }
+
+  #header-right-side a {
+    display: none;
+  }
+
+  #header-title a + a {
+    z-index: 1;
+    position: absolute;
+    bottom: -538px;
+    display: block;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #header-title a {
+    display: none;
+  }
+
+  #PDV h1 {
+    font-size: 37px;
+    margin: 0 auto 25px;
+  }
+
+  #PDVgrid {
+    display: block;
+  }
+
+  #PDVgrid div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #theme-nu-II h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  #articles-holder {
+    flex-wrap: nowrap;
+  }
+
+  #business-title-flex h2 {
+    font-size: 36px;
+  }
+
+  footer.section-box {
+    padding-top: 70px;
+  }
+
+  footer h2 {
+    font-size: 25px;
+  }
+
+  #bottom-of-footer div:first-child {
+    display: none;
+  }
+
+  #bottom-of-footer {
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  #bottom-of-footer #right-corner p {
+    position: absolute;
+    right: 0;
+    display: block;
+    left: 0;
+    text-align: center;
+    margin: 50px 0 0 0;
+    color: #a9a9ac;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header #logo img {
+    filter: invert();
+    margin-right: 18px;
+  }
+
+  .section-box {
+    padding: 120px 60px 120px; /* 7.8vw=60px*/
+  }
+
+  #absolute-header {
+    padding: 18px 60px 20px; /* 7.8vw=60px*/
+  }
+
+  #absolute-header {
+    position: relative;
+  }
+
+  #header-img-holder {
+    height: 392px;
+    display: block;
+    position: relative;
+  }
+
+  header #header-img-holder img {
+    position: absolute;
+    top: 0;
+    width: 784px;
+    display: block;
+    right: 0;
+  }
+
+  header h3 {
+    color: black;
+  }
+
+  header h3 + h3 {
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    margin: 0;
+  }
+
+  #flex-container {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  #header-left-side {
+    display: none;
+  }
+  #header-right-side {
+    display: block;
+    width: 170px;
+    margin-left: 2px;
+  }
+  #header-right-side .nav-links:nth-child(2) {
+    display: none;
+  }
+  #header-right-side a:first-child {
+    color: #1f212b;
+  }
+
+  #header-right-side #ZP {
+    display: none;
+  }
+
+  #header-right-side #mybar {
+    display: inline-block;
+  }
+
+  #header-title h2 {
+    display: none;
+  }
+
+  #header-title h3 {
+    color: #1f212b;
+    display: block;
+    font-family: PlayFairDisplay;
+    font-size: 34px;
+    font-weight: 400;
+  }
+
+  #header-title small {
+    font-size: 15.5px;
+    color: #605c5c;
+  }
+
+  #header-title a {
+    display: none;
+  }
+
+  #header-title a + a {
+    display: block;
+    margin-top: 22px;
+    background: #f47758;
+    color: white;
+  }
+
+  #III-cards {
+    width: 297px;
+    min-width: 297px;
+  }
+
+  #services-title {
+    width: 100%;
+    max-width: 410px;
+    float: none;
+    margin: 0px auto 35px;
+  }
+
+  #services-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #theme-nu-II h2 {
+    margin-top: 0;
+  }
+
+  #business-title-flex h2 {
+    margin-top: 0;
+  }
+
+  #articles-holder {
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #PDV button {
+    display: none;
+  }
+
+  #PDV button + button {
+    display: block;
+  }
+
+  #PDV #img1000 {
+    width: 87%;
+  }
+
+  #footer-nav-holder {
+    justify-content: flex-start;
+    column-gap: 54px;
+  }
+}
+
 /* mozda 1200 */
 @media only screen and (min-width: 1001px) {
   #absolute-header {
@@ -830,251 +1076,5 @@ footer nav a {
   #footer-nav-holder + p {
     font-size: 0;
     margin-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  header #logo img {
-    filter: invert();
-    margin-right: 18px;
-  }
-
-  .section-box {
-    padding: 120px 60px 120px; /* 7.8vw=60px*/
-  }
-
-  #absolute-header {
-    padding: 18px 60px 20px; /* 7.8vw=60px*/
-  }
-
-  #absolute-header {
-    position: relative;
-  }
-
-  #header-img-holder {
-    height: 392px;
-    display: block;
-    position: relative;
-  }
-
-  header #header-img-holder img {
-    position: absolute;
-    top: 0;
-    width: 784px;
-    display: block;
-    right: 0;
-  }
-
-  header h3 {
-    color: black;
-  }
-
-  header h3 + h3 {
-    color: white;
-    text-shadow: 0px 1px 1px black;
-    margin: 0;
-  }
-
-  #flex-container {
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  #header-left-side {
-    display: none;
-  }
-  #header-right-side {
-    display: block;
-    width: 170px;
-    margin-left: 2px;
-  }
-  #header-right-side .nav-links:nth-child(2) {
-    display: none;
-  }
-  #header-right-side a:first-child {
-    color: #1f212b;
-  }
-
-  #header-right-side #ZP {
-    display: none;
-  }
-
-  #header-right-side #mybar {
-    display: inline-block;
-  }
-
-  #header-title h2 {
-    display: none;
-  }
-
-  #header-title h3 {
-    color: #1f212b;
-    display: block;
-    font-family: "PlayFairDisplay";
-    font-size: 34px;
-    font-weight: 400;
-  }
-
-  #header-title small {
-    font-size: 15.5px;
-    color: #605c5c;
-  }
-
-  #header-title a {
-    display: none;
-  }
-
-  #header-title a + a {
-    display: block;
-    margin-top: 22px;
-    background: #f47758;
-    color: white;
-  }
-
-  #III-cards {
-    width: 297px;
-    min-width: 297px;
-  }
-
-  #services-title {
-    width: 100%;
-    max-width: 410px;
-    float: none;
-    margin: 0px auto 35px;
-  }
-
-  #services-container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #theme-nu-II h2 {
-    margin-top: 0;
-  }
-
-  #business-title-flex h2 {
-    margin-top: 0;
-  }
-
-  #articles-holder {
-    align-self: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #PDV button {
-    display: none;
-  }
-
-  #PDV button + button {
-    display: block;
-  }
-
-  #PDV #img1000 {
-    width: 87%;
-  }
-
-  #footer-nav-holder {
-    justify-content: flex-start;
-    column-gap: 54px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  header #header-img-holder img {
-    display: none;
-  }
-
-  #header-img-holder {
-    height: 530px;
-    display: block;
-    position: relative;
-  }
-
-  header #header-img-holder img + img {
-    position: absolute;
-    top: 0;
-    width: 380px;
-    display: block;
-  }
-
-  .section-box {
-    padding: 80px 28px 80px;
-  }
-
-  #absolute-header {
-    padding: 18px 28px 0px;
-  }
-
-  #header-right-side a {
-    display: none;
-  }
-
-  #header-title a + a {
-    z-index: 1;
-    position: absolute;
-    bottom: -538px;
-    display: block;
-    padding: 16px;
-    width: 100%;
-    text-align: center;
-  }
-
-  #header-title a {
-    display: none;
-  }
-
-  #PDV h1 {
-    font-size: 37px;
-    margin: 0 auto 25px;
-  }
-
-  #PDVgrid {
-    display: block;
-  }
-
-  #PDVgrid div {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #theme-nu-II h2 {
-    font-size: 36px;
-    margin-bottom: 25px;
-  }
-
-  #articles-holder {
-    flex-wrap: nowrap;
-  }
-
-  #business-title-flex h2 {
-    font-size: 36px;
-  }
-
-  footer.section-box {
-    padding-top: 70px;
-  }
-
-  footer h2 {
-    font-size: 25px;
-  }
-
-  #bottom-of-footer div:first-child {
-    display: none;
-  }
-
-  #bottom-of-footer {
-    justify-content: space-around;
-    margin-bottom: 40px;
-  }
-
-  #bottom-of-footer #right-corner p {
-    position: absolute;
-    right: 0;
-    display: block;
-    left: 0;
-    text-align: center;
-    margin: 50px 0 0 0;
-    color: #a9a9ac;
   }
 }

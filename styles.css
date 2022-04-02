@@ -21,6 +21,10 @@ body {
   color: #1f212b;
 }
 
+header{
+  height: 50vw;
+}
+
 header #header-img-holder img {
   top: 0;
   width: 100%;
@@ -88,10 +92,17 @@ header #header-img-holder img + img {
 }
 
 #absolute-header {
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
+  height: 100%;
   padding: 20px 60px 0;
+}
+
+#header-img-holder{
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 #logo img {
@@ -232,9 +243,11 @@ header #header-img-holder img + img {
 
 #header-title {
   position: relative;
-  max-width: 345px;
   color: white;
-  margin-top: 40px;
+  height: calc(100% - 51px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #header-title h2 {
@@ -251,6 +264,7 @@ header #header-img-holder img + img {
 }
 
 #header-title small {
+  max-width: 345px;
   display: block;
   line-height: 22px;
   font-family: HalveticaNowDisplay;
@@ -272,7 +286,7 @@ header #header-img-holder img + img {
   font-family: HalveticaNowDisplay;
   font-size: 11px;
   text-transform: uppercase;
-  margin: 25px 0px 25px;
+  margin: 25px 0px 0px;
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 1.3px;
@@ -725,7 +739,6 @@ footer nav a {
   }
 
   #header-title h2 {
-    margin: 9vw 0 0 0;
     font-size: 61px;
     width: 490px;
     line-height: 62px;
@@ -870,6 +883,10 @@ footer nav a {
 }
 
 @media only screen and (max-width: 768px) {
+  header{
+    height: 100%;
+  }
+
   header #logo img {
     filter: invert();
     margin-right: 18px;
@@ -952,7 +969,7 @@ footer nav a {
   }
 
   #header-title small {
-    color: #ffffff;
+    color: #1f212b;
     font-size: 16px;
     font-weight: 400;
     opacity: 0.8;
@@ -1018,13 +1035,13 @@ footer nav a {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   header #header-img-holder img {
     display: none;
   }
 
   #header-img-holder {
-    height: 530px;
+    height: 600px;
     display: block;
     position: relative;
   }
@@ -1032,7 +1049,7 @@ footer nav a {
   header #header-img-holder img + img {
     position: absolute;
     top: 0;
-    width: 400px;
+    width: 430px;
     display: block;
   }
 

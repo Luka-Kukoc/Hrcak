@@ -24,7 +24,7 @@ var mqls = [
   window.matchMedia("(max-width: 768px)"),
   window.matchMedia("(max-width: 1000px)"),
   window.matchMedia("(max-width: 1440px)"),
-  window.matchMedia("(max-width: 1600px)"),
+  window.matchMedia("(min-width: 1441px)"),
 ];
 
 function mediaqueryresponse(mql) {

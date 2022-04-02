@@ -64,3 +64,15 @@ window.addEventListener("DOMContentLoaded", (e) => {
     document.getElementById("splash").className += "MyClass";
   }, 2000);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide1 = new Splide(".splide", {
+    drag: "free",
+    rewind: true,
+    fixedWidth: "280px",
+    fixedHeight: "280px",
+    arrows: false,
+    pagination: false,
+  });
+  splide1.mount();
+});

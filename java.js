@@ -24,7 +24,7 @@ var mqls = [
   window.matchMedia("(max-width: 768px)"),
   window.matchMedia("(max-width: 1000px)"),
   window.matchMedia("(max-width: 1440px)"),
-  window.matchMedia("(max-width: 1600px)"),
+  window.matchMedia("(min-width: 1441px)"),
 ];
 
 function mediaqueryresponse(mql) {
@@ -63,4 +63,16 @@ window.addEventListener("DOMContentLoaded", (e) => {
     //splash.className("spl");
     document.getElementById("splash").className += "MyClass";
   }, 2000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide1 = new Splide(".splide", {
+    drag: "free",
+    rewind: true,
+    fixedWidth: "280px",
+    fixedHeight: "280px",
+    arrows: false,
+    pagination: false,
+  });
+  splide1.mount();
 });

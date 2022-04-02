@@ -548,7 +548,6 @@ header #header-img-holder img + img {
   width: 280px;
   min-width: 280px;
   padding: 30px;
-  margin: 14px 17px;
 }
 
 #business-link img {
@@ -1114,5 +1113,12 @@ footer nav a {
     text-align: center;
     margin: 50px 0 0 0;
     color: #a9a9ac;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .splide {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -9,6 +9,9 @@ body {
 .nav-links {
   color: black !important;
 }
+.mobile-nav {
+  display: none;
+}
 
 #header-right-side .nav-links button {
   color: black !important;
@@ -231,6 +234,35 @@ footer nav a {
 @media only screen and (max-width: 768px) {
   #absolute-header {
     padding: 18px 28px 20px; /* 7.8vw=60px*/
+  }
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 300;
+    background-color: white;
+    margin-top: 60px;
+    transition: 0.6s;
+  }
+  .mobile-nav.active {
+    left: 0;
+  }
+  .mobile-nav-link-holder {
+    margin-top: 60px;
+    display: block;
+  }
+  .mobile-nav-link-anchors {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    color: #0a0a0b;
+    text-decoration: none;
+    font-family: PlayFairDisplay;
+    font-size: xx-large;
   }
 }
 @media only screen and (max-width: 380px) {

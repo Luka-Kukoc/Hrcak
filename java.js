@@ -1,13 +1,17 @@
 const menubtn = document.querySelector(".bar-holder");
 let menuOpen = false;
 
+const mobile_menu = document.querySelector(".mobile-nav");
+
 menubtn.addEventListener("click", () => {
   if (!menuOpen) {
     menubtn.classList.add("open");
     menuOpen = true;
+    mobile_menu.classList.add("active");
   } else {
     menubtn.classList.remove("open");
     menuOpen = false;
+    mobile_menu.classList.remove("active");
   }
 });
 

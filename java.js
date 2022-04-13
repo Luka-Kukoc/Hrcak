@@ -1,6 +1,6 @@
 const menubtn = document.querySelector(".bar-holder");
 let menuOpen = false;
-
+const body=document.body;
 const mobile_menu = document.querySelector(".mobile-nav");
 
 menubtn.addEventListener("click", () => {
@@ -8,10 +8,13 @@ menubtn.addEventListener("click", () => {
     menubtn.classList.add("open");
     menuOpen = true;
     mobile_menu.classList.add("active");
+    body.style.overflowY="hidden";
+
   } else {
     menubtn.classList.remove("open");
     menuOpen = false;
     mobile_menu.classList.remove("active");
+    body.style.overflowY="visible";
   }
 });
 
@@ -81,3 +84,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide1.mount();
 });
+

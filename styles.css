@@ -125,7 +125,6 @@ header #header-img-holder img + img {
   display: flex;
   padding: 2px 0vw 5px 0vw;
   align-items: center;
-  z-index: 400;
 }
 
 #header-right-side {

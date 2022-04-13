@@ -260,8 +260,8 @@ footer nav a {
   .mobile-nav {
     display: block;
     position: fixed;
-    top: 0;
-    left: 100%;
+    bottom: 100%;
+    left: 0;
     width: 100%;
     min-height: 100vh;
     z-index: 300;
@@ -270,11 +270,16 @@ footer nav a {
     transition: 0.6s;
   }
   .mobile-nav.active {
-    left: 0;
+    bottom: 0;
   }
   .mobile-nav-link-holder {
     margin-top: 60px;
-    display: block;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 28px;
+    line-height: 140%;
   }
   .mobile-nav-link-anchors {
     display: block;
@@ -284,7 +289,7 @@ footer nav a {
     color: #0a0a0b;
     text-decoration: none;
     font-family: PlayFairDisplay;
-    font-size: xx-large;
+    font-size: 36px;
   }
   
   #contact-content-grid {

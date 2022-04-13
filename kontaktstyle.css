@@ -1,5 +1,5 @@
 body {
-  background: #ffff;
+  background: #f4f4f4;
 }
 
 #logo img {
@@ -21,17 +21,38 @@ body {
   color: white !important;
 }
 
-#stmap img {
-  top: 0;
-  width: 100%;
+#contact-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-column-gap: 90px;
+  grid-row-gap: 40px;
+  margin: 120px 0;
+}
+
+#contact-content2 {
   display: block;
-  margin: 0 auto;
+  position: relative;
+  max-width: 440px;
+}
+
+#services-flex2 #plan-links img{
+  mix-blend-mode: darken;
+}
+
+#contact-content2 p{
+  font-family: HalveticaNowDisplay;
+  color: black;
+  opacity: 0.7;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 11px;
 }
 
 #contact-content {
   display: block;
   position: relative;
-  margin-top: 120px;
+  width: max-content;
 }
 
 #contact-content h1 {
@@ -51,7 +72,6 @@ body {
 
 #contact-content small {
   margin-top: 20px;
-  max-width: 260px;
   display: block;
   font-family: HalveticaNowDisplay;
   font-size: 18px;
@@ -59,7 +79,7 @@ body {
 }
 
 #contact-content a {
-  display: block;
+  display: inline-block;
   margin-top: 8px;
   color: gray;
   font-family: HalveticaNowDisplay;
@@ -197,18 +217,18 @@ footer nav a {
     font-size: 50px;
   }
 
-  #contact-content small {
+  /* #contact-content small {
     max-width: 426px;
-  }
+  } */
   #footer-nav-holder {
     max-width: 1001px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  #contact-content {
+  /* #contact-content {
     width: 460px;
-  }
+  } */
 
   #contact-content h1 {
     font-size: 53px;
@@ -232,6 +252,8 @@ footer nav a {
   }
 }
 @media only screen and (max-width: 768px) {
+
+
   #absolute-header {
     padding: 18px 28px 20px; /* 7.8vw=60px*/
   }
@@ -264,6 +286,16 @@ footer nav a {
     font-family: PlayFairDisplay;
     font-size: xx-large;
   }
+  
+  #contact-content-grid {
+    display: block;
+  }
+
+  #contact-content {
+    width: 100%;
+  }
+
+
 }
 @media only screen and (max-width: 380px) {
   #contact-content h1 {

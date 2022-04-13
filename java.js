@@ -76,8 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var splide1 = new Splide(".splide", {
     drag: "free",
     rewind: true,
-    fixedWidth: "280px",
-    fixedHeight: "280px",
+    //fixedWidth: "280px",
+    //fixedHeight: "280px",
+    autoWidth: true,
     arrows: false,
     pagination: false,
   });

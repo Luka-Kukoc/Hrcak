@@ -9,9 +9,9 @@ body {
 .nav-links {
   color: black !important;
 }
-.mobile-nav {
+/* .mobile-nav {
   display: none;
-}
+} */
 
 #header-right-side .nav-links button {
   color: black !important;
@@ -25,7 +25,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   grid-column-gap: 90px;
-  grid-row-gap: 40px;
+  grid-row-gap: 40px !important;
   margin: 120px 0;
 }
 
@@ -257,7 +257,7 @@ footer nav a {
   #absolute-header {
     padding: 18px 28px 20px; /* 7.8vw=60px*/
   }
-  .mobile-nav {
+  /* .mobile-nav {
     display: block;
     position: fixed;
     top: 0;
@@ -285,7 +285,7 @@ footer nav a {
     text-decoration: none;
     font-family: PlayFairDisplay;
     font-size: xx-large;
-  }
+  } */
   
   #contact-content-grid {
     display: block;

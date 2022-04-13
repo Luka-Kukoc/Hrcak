@@ -860,7 +860,7 @@ footer nav a {
 
 @media only screen and (min-width: 1440px) {
 
-  .fade-in .title-holder img{
+  .title-holder img{
     width: 55vw;
   }
   /* .bottom-segment{
@@ -918,7 +918,7 @@ footer nav a {
 
 @media only screen and (max-width: 768px) {
 
-  .fade-in .title-holder img{
+  .title-holder img{
     width: 68vw;
   }
   /* .bottom-segment{
@@ -1183,7 +1183,7 @@ footer nav a {
 }
 
 @media only screen and (max-width: 430px) {
-  .fade-in .title-holder img{
+  .title-holder img{
     width: 70vw;
   }
 

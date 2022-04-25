@@ -1,6 +1,6 @@
 const menubtn = document.querySelector(".bar-holder");
 let menuOpen = false;
-const body=document.body;
+const body = document.body;
 const mobile_menu = document.querySelector(".mobile-nav");
 
 menubtn.addEventListener("click", () => {
@@ -8,13 +8,12 @@ menubtn.addEventListener("click", () => {
     menubtn.classList.add("open");
     menuOpen = true;
     mobile_menu.classList.add("active");
-    body.style.overflowY="hidden";
-
+    body.style.overflowY = "hidden";
   } else {
     menubtn.classList.remove("open");
     menuOpen = false;
     mobile_menu.classList.remove("active");
-    body.style.overflowY="visible";
+    body.style.overflowY = "visible";
   }
 });
 
@@ -85,3 +84,17 @@ document.addEventListener("DOMContentLoaded", function () {
   splide1.mount();
 });
 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);

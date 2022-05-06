@@ -72,16 +72,42 @@ window.addEventListener("DOMContentLoaded", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var splide1 = new Splide(".splide", {
-    drag: "free",
+
+  var splide1 = new Splide(".splide1", {
+    
+    drag: false,
     rewind: true,
     //fixedWidth: "280px",
     //fixedHeight: "280px",
     autoWidth: true,
     arrows: false,
     pagination: false,
+    breakpoints: {
+      1500:{
+            drag:"free"
+      }
+    },
   });
   splide1.mount();
+
+  var splide2 = new Splide(".splide2", {
+    drag: false,
+    rewind: true,
+    //fixedWidth: "280px",
+    //fixedHeight: "280px",
+    autoWidth: true,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      2550:{
+            drag:"free"
+      }
+    },
+  });
+  
+  splide2.mount();
+
+  
 });
 
 function reveal() {
